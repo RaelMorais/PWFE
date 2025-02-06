@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick=funcao()></button>
+    <script>
+        alert("Olá")
+        //Alert - Recados em um Popup
+        function funcao(){
+            window.alert("Olá Mundo! Quebrando uma maldição :)")
+        }
+        let x = prompt("Qual a sua materia favorita")
+        confirm("É isso mesmo!")
+        //Tipo de variaveis
+        //let, const, var 
+        var nome2 = "Sou uma String em JS"
+        let nasc = 2006
+        const idade = 2025 -nasc
+
+        let nome = prompt("Qual o seu nom?")
+        alert(`Olá, ${nome}`)
+
+        document.body.innerHTML += `<h1>Olá ${nome}, sua materia favorita é ${x}</h1>`
+        document.body.innerHTML += `<h2>${nome2}, tenho ${idade} pois nasci em ${nasc}</h2>`
+    </script>
+</body>
+</html>
