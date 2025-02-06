@@ -17,15 +17,39 @@
         confirm("É isso mesmo!")
         //Tipo de variaveis
         //let, const, var 
+        let n1 = Number(prompt("Entre com a nota 1: "))
+        let n2 = Number(prompt("Entre com a nota 2: "))
+        let media = (n1+n2)/2
+        document.write(`Situação: ${ap}`);
+
+        let ap = ""
+        if(media >= 7){
+            ap = "Passou"
+            document.body.innerHTML += `<h1>Média é ${ap}</h1>`
+        }if(media <= 5){
+            ap = "Recuperação"
+            document.body.innerHTML += `<h1>Média é ${ap}</h1>`
+        }else{
+            ap = "Reprovado"
+            document.body.innerHTML += `<h1>Média é ${ap}</h1>`
+        }
+        
+
         var nome2 = "Sou uma String em JS"
         let nasc = 2006
         const idade = 2025 -nasc
-
         let nome = prompt("Qual o seu nom?")
         alert(`Olá, ${nome}`)
-
         document.body.innerHTML += `<h1>Olá ${nome}, sua materia favorita é ${x}</h1>`
         document.body.innerHTML += `<h2>${nome2}, tenho ${idade} pois nasci em ${nasc}</h2>`
+        document.body.innerHTML += `Média é ${ap}`
+
+        //trabalhando 
+   
+
+
+ 
+
     </script>
 </body>
 </html>
