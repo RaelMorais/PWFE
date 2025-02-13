@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    let opcao = Number(prompt("Digite a opção\n1-Adição\n2-Multiplicação\n3-Subtração\n4-Divisão"))
+    let nume1 = Number(prompt("Entre com o número 1: "))
+    let nume2 = Number(prompt("Entre com o número 2: ")) 
+    let numerrr;
+    
+    switch (opcao) {
+        case 1:
+            numerrr = nume1 + nume2;
+            document.body.innerHTML += `<h1>${nume1} + ${nume2} = ${numerrr}</h1>`;
+            break;
+        case 2:
+            numerrr = nume1 * nume2;
+            document.body.innerHTML += `<h1>${nume1} * ${nume2} = ${numerrr}</h1>`;
+            break;
+        case 3:
+            numerrr = nume1 - nume2;
+            document.body.innerHTML += `<h1>${nume1} - ${nume2} = ${numerrr}</h1>`;
+            break;
+        case 4:
+            numerrr = nume1 / nume2;
+            document.body.innerHTML += `<h1>${nume1} / ${nume2} = ${numerrr}</h1>`;
+            break;
+        default:
+            document.body.innerHTML += "<h1>Opção inválida</h1>";
+            break;
+    }
+    </script>
+    

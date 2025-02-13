@@ -15,26 +15,10 @@
         }
         let x = prompt("Qual a sua materia favorita")
         confirm("É isso mesmo!")
+
+
         //Tipo de variaveis
         //let, const, var 
-        let n1 = Number(prompt("Entre com a nota 1: "))
-        let n2 = Number(prompt("Entre com a nota 2: "))
-        let media = (n1+n2)/2
-        document.write(`Situação: ${ap}`);
-
-        let ap = ""
-        if(media >= 7){
-            ap = "Passou"
-            document.body.innerHTML += `<h1>Média é ${ap}</h1>`
-        }if(media <= 5){
-            ap = "Recuperação"
-            document.body.innerHTML += `<h1>Média é ${ap}</h1>`
-        }else{
-            ap = "Reprovado"
-            document.body.innerHTML += `<h1>Média é ${ap}</h1>`
-        }
-        
-
         var nome2 = "Sou uma String em JS"
         let nasc = 2006
         const idade = 2025 -nasc
@@ -44,11 +28,69 @@
         document.body.innerHTML += `<h2>${nome2}, tenho ${idade} pois nasci em ${nasc}</h2>`
         document.body.innerHTML += `Média é ${ap}`
 
-        //trabalhando 
-   
+        //Tipos de inteiros
+        let n1 = Number(prompt("Entre com a nota 1: "))
+        let n2 = Number(prompt("Entre com a nota 2: "))
+        let media = (n1+n2)/2
+        document.write(`Média: ${media}`);
 
+        //If e Else
+        if(media >= 7){
+           alert("Passou")
+        }if(media <= 5){
+            alert("Em recuperação")
+        }else{
+            alert("Reprovado")
+        }
 
- 
+        //laço for 
+
+        for(let i = 100;i > 50; i--){
+            document.write(`o numero agora é ${a} <br>`)
+
+        }
+        //laço while
+        contador = 0
+        while(contador <= 100){
+            document.write(`Seu número é ${contador}<br>`)
+            contador += 10; 
+        }
+        //laço do-while
+        let i = 1;
+        do{
+            if (i % 2 == 0){
+                document.write(`${i} é par`)
+            } else{
+                document.write(`${i} é impar`)
+            }
+            i++
+        }while(i <= 20)
+        //switch case
+
+        let opcao = Number(prompt("Digite a opção\n1-Adição\n2-Multiplicação\n3-Subtração\n4-Divisão"))
+        let nume1 = Number(prompt("Entre com o número 1: "))
+        let nume2 = Number(prompt("Entre com o número 1: "))
+        switch (opcao) {
+            case 1:
+                numerrr = nume1 + nume2
+                document.body.innerHTML += `<h1>${nume1} + ${nume2} </h1>`
+                break;
+            case 2:
+                numerrr = nume1 * nume2
+                document.body.innerHTML += `<h1>${nume1} * ${nume2} </h1>`
+                break;
+            case 3:
+                numerrr = nume1 - nume2
+                document.body.innerHTML += `<h1>${nume1} - ${nume2} </h1>`
+                break;
+            case 4:
+                numerrr = nume1 / nume2
+                document.body.innerHTML += `<h1>${nume1} / ${nume2} </h1>`;
+                break;
+
+            default:
+                break;
+        }
 
     </script>
 </body>
