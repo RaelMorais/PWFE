@@ -98,3 +98,24 @@ function Imc(){
         document.getElementById('ImcResult').textContent = `Obesity Class III`;
     }
 }
+
+
+function Year(){
+    try {
+        let year = parseInt(document.getElementById('formGroupExampleInput').value);
+
+        if (isNaN(year)) {
+            throw new Error("Is not an integer number");
+        }
+        let result = "";
+        if(year % 4 === 0 && year % 100 !== 0 || year % 400 === 0) {
+            result = year + " Is Bissexto"; 
+        }else{
+            result = year + " Isn't Bissexto"
+        }
+
+        document.getElementById('YearResult').textContent = result;
+    } catch (error) {
+        console.log(error.message); 
+  }
+}
