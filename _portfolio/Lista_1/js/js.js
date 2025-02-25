@@ -119,3 +119,31 @@ function Year(){
         console.log(error.message); 
   }
 }
+
+function generateTable() {
+    const numero = document.getElementById('number_one_ex10').value;
+    const tableContainer = document.getElementById('multiplicationTable');
+
+    tableContainer.innerHTML = "";
+    if (!numero) {
+        alert("Please enter a valid number.");
+        return;
+    }
+
+    for (let i = 1; i <= 10; i++) {
+        const result = numero * i;
+        const p = document.createElement('p');
+        p.classList.add("multiplication-row");
+        p.innerHTML = `<span>${numero}</span> x <span>${i}</span> = <span>${result}</span>`;
+        tableContainer.appendChild(p);
+    }
+}
+
+function again() {
+    clearTable(); 
+    document.getElementById('number_one_ex10').value = ''; 
+}
+function clearTable() {
+    const tableContainer = document.getElementById('multiplicationTable');
+    tableContainer.innerHTML = "";
+}
