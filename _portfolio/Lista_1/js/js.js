@@ -149,3 +149,26 @@ function clearTable() {
     tableContainer.innerHTML = "";
 }
 
+function Tax(){
+    let ValueOriginal = Number(document.getElementById('formGroupExampleInput').value);
+    let ValueConverted = Number(document.getElementById('formGroupExampleInput2').value);
+
+    let Value = ValueOriginal * ValueConverted
+    document.getElementById('TaxResult').textContent = Value;
+
+
+}
+
+function Fatorial() {
+    let value = Number(document.getElementById('formGroupExampleInput').value);
+    
+    let result = 1;
+    if (value < 0) {
+        document.getElementById('FatorialResult').textContent = 'Por favor, insira um número positivo';
+        return;
+    }
+    for (let i = 1; i <= value; i++) {
+        result *= i; 
+    }
+    document.getElementById('FatorialResult').textContent = result;
+}
