@@ -19,7 +19,7 @@
         <nav class="navbar navbar-light bg-light">
             <a class="navbar-brand">Escolha a lista</a>
             <form class="form-inline">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Voltar</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="goToPage() ">Voltar</button>
             </form>
         </nav>
     </header>
@@ -85,3 +85,8 @@
 </body>
 
 </html>
+<script>
+        function goToPage() {
+        window.location.href = "./index.html"; // Redireciona para o 'index.html'
+      }
+</script>
