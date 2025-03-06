@@ -1,3 +1,4 @@
+
 function ver(){
     let number_one_ex1 = parseFloat(document.getElementById('formGroupExampleInput').value);
     let number_two_ex1 = parseFloat(document.getElementById('formGroupExampleInput2').value);
@@ -147,3 +148,4 @@ function clearTable() {
     const tableContainer = document.getElementById('multiplicationTable');
     tableContainer.innerHTML = "";
 }
+
