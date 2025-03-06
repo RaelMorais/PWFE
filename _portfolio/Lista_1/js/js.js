@@ -149,3 +149,34 @@ function clearTable() {
     tableContainer.innerHTML = "";
 }
 
+
+let placarJogador = 0;
+let placarComputador = 0;
+
+function jogar(escolhaJogador) {
+    const opcoes = ['pedra', 'papel', 'tesoura'];
+    const escolhaComputador = opcoes[Math.floor(Math.random() * 3)];
+
+    let resultado = '';
+    if (escolhaJogador === escolhaComputador) {
+        resultado = 'Empate!';
+    } else if (
+        (escolhaJogador === 'pedra' && escolhaComputador === 'tesoura') ||
+        (escolhaJogador === 'papel' && escolhaComputador === 'pedra') ||
+        (escolhaJogador === 'tesoura' && escolhaComputador === 'papel')
+    ) {
+        resultado = 'Você venceu!';
+        placarJogador++;
+    } else {
+        resultado = 'Você perdeu!';
+        placarComputador++;
+    }
+
+    document.getElementById('placar-jogador').innerText = placarJogador;
+    document.getElementById('placar-computador').innerText = placarComputador;
+    document.getElementById('resultado').innerHTML = `
+        <p><strong>Você escolheu:</strong> ${escolhaJogador}</p>
+        <p><strong>O computador escolheu:</strong> ${escolhaComputador}</p>
+        <h2>${resultado}</h2>
+    `;
+}
