@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multiplication Table</title>
+    <title>#10</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -20,6 +20,21 @@
           </nav>
     </header>
     <main>
+        <section class="primary_section">
+            <h1>#10</h1>
+        <div class="div_container">
+        <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Enter a value required</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Number 1">
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Enter a exchange rate</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Number 2">
+          </div>
+        </div>
+        <button type="button" onclick="Tax()" class="btn btn-dark btn-lg">See</button>
+        <h2>Result:R$ <span id="TaxResult"></span></h2>
+      </section>
         <section class="secondary_section">
             <nav aria-label="Page navigation example">
                 <ul class="pagination">
@@ -55,7 +70,10 @@
 </body>
 </html>
 <script>
-    function goToPage() {
-  window.location.href = "../index.html"; // Redireciona para o 'index.html'
-}
+     function goToPage() {
+    window.location.href = "desafio_09.html"; 
+  }
+  function goToNext(){
+        window.location.href = 'desafio_10.html'
+      }
   </script>
