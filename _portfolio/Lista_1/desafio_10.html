@@ -12,29 +12,14 @@
 <body>
     <header>
         <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand">Atividades da Fer</a>
+            <a class="navbar-brand">Activits of Fernanda</a>
             <form class="form-inline">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="goToPage()">Voltar</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="goToPage()">Back</button>
+                <button type="button" class="btn btn-outline-primary" onclick="goToNext()">Next</button>
               </form>
           </nav>
     </header>
     <main>
-        <div class="container">
-            <h1>Jogo Pedra, Papel e Tesoura</h1>
-            <p>Escolha uma opção para começar a jogar!</p>
-            <div class="row justify-content-center">
-                <button type="button" class="btn btn-outline-danger btn-game" onclick="jogar('pedra')">Pedra</button>
-                <button type="button" class="btn btn-outline-primary  btn-game" onclick="jogar('papel')">Papel</button>
-                <button type="button" class="btn btn-outline-secondary  btn-game" onclick="jogar('tesoura')">Tesoura</button>
-            </div>
-            <div class="result" id="resultado">
-                
-            </div>
-            <div class="score" id="placar">
-                <p><strong>Placar:</strong></p>
-                <p>Você: <span id="placar-jogador">0</span> | Computador: <span id="placar-computador">0</span></p>
-            </div>
-        </div>
         <section class="secondary_section">
             <nav aria-label="Page navigation example">
                 <ul class="pagination">
@@ -74,6 +59,3 @@
   window.location.href = "../index.html"; // Redireciona para o 'index.html'
 }
   </script>
-  <script>
-
-</script>

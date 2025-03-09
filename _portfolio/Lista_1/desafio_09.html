@@ -12,16 +12,17 @@
 <body>
     <header>
         <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand">Atividades da Fer</a>
+            <a class="navbar-brand">Activits of Fernanda</a>
             <form class="form-inline">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="goToPage()">Voltar</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="goToPage()">Back</button>
+                <button type="button" class="btn btn-outline-primary" onclick="goToNext()">Next</button>
               </form>
           </nav>
     </header>
     <main>
         <section class="primary_section">
             <div class="container">
-                <h1 class="text-center mt-4">Multiplication Table</h1>
+                <h1 class="text-center mt-4">#09</h1>
                 
                     <div class="table-container">
                         <div class="form-group">
@@ -71,7 +72,10 @@
 </body>
 </html>
 <script>
-    function goToPage() {
-  window.location.href = "../index.html"; // Redireciona para o 'index.html'
-}
+     function goToPage() {
+    window.location.href = "desafio_08.html"; 
+  }
+  function goToNext(){
+        window.location.href = 'desafio_10.html'
+      }
   </script>
