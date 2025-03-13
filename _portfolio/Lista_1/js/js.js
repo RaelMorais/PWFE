@@ -194,6 +194,12 @@ function jogar(escolhaJogador) {
         resultado = 'Você perdeu!';
         placarComputador++;
     }
+    if(placarComputador == 10){
+        window.alert("Parabens!")
+    }
+    else if(placarJogador == 10){
+        window.alert("Parabens")
+    }
 
     document.getElementById('placar-jogador').innerText = placarJogador;
     document.getElementById('placar-computador').innerText = placarComputador;

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Aula 03</title>
+    <style>
+        /* section {
+            margin-top: 90px;
+            display: flex;
+            width: 1080px;
+            margin-left: auto;
+            margin-right: auto;
+            flex-direction: column;
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav
+            class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="https://icons.veryicon.com/png/o/miscellaneous/20-classification-function-icon/8_3-front-end-development-1.png"
+                        class="h-8" alt="Flowbite Logo">
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">PWFE</span>
+                </a>
+                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    <button type="button"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Voltar</button>
+                    <button data-collapse-toggle="navbar-sticky" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                    <ul
+                        class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="bg-white dark:bg-gray-900 mt-15 flex justify-center flex-col items-center">
+            <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+                <h1
+                    class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+                    Arrays</h1>
+                <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">Aula
+                    sobre Arrays junto com uma revisão geral de
+                    <span
+                        class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-blue-900 dark:text-blue-300">
+                        JS
+                    </span>
+                    onde foi explicado sobre os tipos de dados, e exercícios práticos de Array.
+                </p>
+                <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+                </div>
+            </div>
+            <figure class="max-w-screen-md mx-auto text-center mx-5">
+                <!-- <svg class="w-10 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                    <path
+                        d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+                </svg> -->
+                <blockquote>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Arrays em JavaScript</h3>
+                    <p class="text-2xl italic font-small text-gray-900 dark:text-white">Em JavaScript, arrays são estruturas de dados que permitem armazenar múltiplos valores em uma única variável. 
+                        Eles são muito úteis quando você precisa lidar com uma coleção de itens, como listas, listas de números, strings, objetos ou até mesmo outros arrays.</p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
+                    <img class="w-6 h-6 rounded-full"
+                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                        alt="profile picture">
+                    <div class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500 dark:divide-gray-700">
+                        <cite class="pe-3 font-medium text-gray-900 dark:text-white">Israel Santana</cite>
+                        <cite class="ps-3 text-sm text-gray-500 dark:text-gray-400">Dev. Fullstack</cite>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <div class="flex items-center justify-center my-6 mx-5">
+                <img class="h-auto max-w-full rounded-lg"
+                    src="https://hermes.dio.me/articles/cover/03b797d0-054f-449a-9b8c-366fc1d7cfe7.png" alt="">
+            </div>
+            <div class="flex items-center justify-left my-6 flex-col items-left mx-5">
+                <h1 class="mb-4 text-lg font-extrabold tracking-tight leading-none text-black md:text-5xl lg:text-6xl">Quais as características de um
+                    <span class="text-blue-600 dark:text-blue-500">Algoritmo</span>?
+                </h1>
+
+                <p class="mb-2">
+                    <span
+                        class="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-yellow-900 dark:text-yellow-300">Abstração:</span>
+                    Trazer conceitos complexos para o mundo real.
+                </p>
+
+                <p class="mb-2">
+                    <span
+                        class="bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-indigo-900 dark:text-indigo-300">Modularidade:</span>
+                    Modularidade é a capacidade de construir algo complexo a partir de subsistemas menores, que podem
+                    ser concebidos separadamente.
+                </p>
+
+                <p class="mb-2">
+                    <span
+                        class="bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-purple-900 dark:text-purple-300">Estrutura
+                        de dados:</span>
+                    São maneiras de organizar e armazenar dados para que possam ser acessados e manipulados de maneira
+                    eficiente.
+                </p>
+
+                <p class="mb-2">
+                    <span
+                        class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-blue-900 dark:text-blue-300">Simplicidade:</span>
+                    A simplicidade em programação e no design de sistemas geralmente se refere a uma abordagem que busca
+                    tornar as soluções mais fáceis de entender, manter e expandir.
+                </p>
+
+                <p class="mb-2">
+                    Variáveis: Espaços em memória para armazenar valores.
+                </p>
+
+                <ul class="list-disc pl-5 mb-4">
+                    <li>Var: Strings.</li>
+                    <li>Const: Constantes.</li>
+                    <li>Let: Não definido.</li>
+                    <li>Array: Conjunto de dados.</li>
+                </ul>
+            </div>
+            <p class="mb-2">Escopo é a forma como definiremos como iremos usar as variáveis criadas dentro de uma
+                função.</p>
+            <p class="mb-2">DoD & DoR</p>
+            <p class="mb-2">DoD: Atender os critérios pré-definidos de entregas, o mínimo aceitável para ser
+                considerado.</p>
+            <p>DoR: </p>
+        </section>
+
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/js.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</html>
