@@ -142,37 +142,62 @@
                     <img class="h-auto max-w-full rounded-lg"
                         src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fu674km5oali5rcdm54gk.png" alt="">
                 </div>
-           
-                <div class="flex items-center justify-center my-6 mx-5 flex-col" >
+                <div class="flex items-center justify-center my-6 mx-5 flex-col">
+                <!-- <div class="flex items-center justify-center flex-col ml-10"> -->
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Tipos de variaveis</h5>
+                    <p class="font-normal text-gray-700 dark:text-gray-400">No JavaScript, as variáveis podem ser declaradas de várias maneiras e podem armazenar diferentes tipos de dados.</p>
+                    <p class="mb-5 font-normal text-gray-700 dark:text-gray-400">Os padrões básicos do JS são <span class="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-red-900 dark:text-red-300">Let</span> <span class="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-pink-900 dark:text-pink-300">Const</span> <span class="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-yellow-900 dark:text-yellow-300">Var</span>.</p>
+                    <p class="mb-5 font-mono text-blue-500 dark:text-blue-300">O <span class="text-red-500 font-bold">let</span> é usado de forma genérica, podendo receber tanto valores inteiros como <span class="text-yellow-500">strings</span>.</p> 
+                    <pre class="mb-5 bg-gray-800 text-white rounded-md sm:mb-4 md:mb-6 lg:mb-8 xl:mb-10">                   
+                            <code class="mb-10">
+                              <span class="text-green-500">let</span> nome = <span class="text-red-500">"João";</span> //String
+                              <span class="text-green-500">let</span> idade = <span class="text-blue-500">25;</span> //Int
+                              <span class="text-green-500">let</span> ativo = <span class="text-yellow-300">true;</span> //Boolean
+                            </code>
+                        </pre>
+                        <p class="font-mono text-blue-500 dark:text-blue-300">  O <span class="text-green-500 font-bold">const</span> é usado para declarar variáveis cujo valor não pode ser alterado.</p> 
+                        <p class="mb-5 font-mono text-blue-500 dark:text-blue-300">Exemplos são <span class="text-yellow-500">números</span> ou <span class="text-yellow-500">strings</span>.</p>                   
+                            <pre class="bg-gray-800 text-white p-4 rounded-md">
+                                <code>
+                                   <span class="text-blue-500">const</span> <span class="text-blue-400">nome</span> = <span class="text-red-400">"João"</span>;
+                                   <span class="text-purple-500">console.<span class="text-blue-400">log</span></span>(<span class="text-yellow-400">nome</span>);
+                                </code>
+                        </pre>
+                        <p class="font-mono text-blue-500 dark:text-blue-300">
+                            O <span class="text-green-500 font-bold">Array</span> é um conjunto de dados que pode conter vários valores em uma única variável.
+                          </p>
+                          
+                          <p class="mb-5 font-mono text-blue-500 dark:text-blue-300">
+                            Exemplos são <span class="text-yellow-500">números</span>, <span class="text-yellow-500">strings</span> e <span class="text-yellow-500">objetos</span>.
+                          </p>
+                          
+                          <pre class="bg-gray-800 text-white p-4 rounded-md">
+                            <code>
+                              <span class="text-blue-500">let</span> <span class="text-blue-400">numeros</span> = <span class="text-yellow-400">[1, 2, 3, 4]</span>;
+                              <br>
+                              <span class="text-purple-500">console.<span class="text-blue-400">log</span></span>(<span class="text-yellow-400">numeros</span>);
+                            </code>
+                          </pre>
+                          
+                          <p class="font-mono text-blue-500 dark:text-blue-300">
+                            O <span class="text-red-500 font-bold">Var</span> é usado para declarar variáveis que podem ser alteradas durante a execução do código.
+                          </p>
+                          
+                          <p class="mb-5 font-mono text-blue-500 dark:text-blue-300">
+                            Exemplos de valores atribuídos a variáveis <span class="text-yellow-500">Var</span> incluem <span class="text-yellow-500">strings</span>, <span class="text-yellow-500">números</span>, ou <span class="text-yellow-500">booleans</span>.
+                          </p>
+                          
+                          <pre class="bg-gray-800 text-white p-4 rounded-md">
+                            <code>
+                              <span class="text-blue-500">var</span> <span class="text-blue-400">nome</span> = <span class="text-red-400">"João"</span>;
+                              <br>
+                              <span class="text-blue-500">var</span> <span class="text-blue-400">idade</span> = <span class="text-yellow-400">25</span>;
+                              <br>
+                              <span class="text-purple-500">console.<span class="text-blue-400">log</span></span>(<span class="text-yellow-400">nome</span>, <span class="text-yellow-400">idade</span>);
+                            </code>
+                          </pre>
+                          
                 </div>
-                <pre class="bg-gray-800 text-white p-4 rounded-lg overflow-auto">
-                    <code>
-                      // Exemplo de declaração de variável em JavaScript
-                      let nome = "João";
-                      let idade = 25;
-                      let ativo = true;
-                  
-                      // Exemplo de um objeto
-                      let pessoa = {
-                        nome: "Maria",
-                        idade: 30
-                      };
-                  
-                      // Exemplo de uma função
-                      function saudacao() {
-                        console.log("Olá!");
-                      }
-                    </code>
-                  </pre>
-                  
-                <ul class="list-disc pl-5 mb-4">
-                    <li>Var: Strings.</li>
-                    <li>Const: Constantes.</li>
-                    <li>Let: Não definido.</li>
-                    <li>Array: Conjunto de dados.</li>
-                </ul>
-            </div>
             <p class="mb-2">Escopo é a forma como definiremos como iremos usar as variáveis criadas dentro de uma
                 função.</p>
             <p class="mb-2">DoD & DoR</p>
