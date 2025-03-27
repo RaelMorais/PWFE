@@ -3,8 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- AULA 4 - Function no Js -->
+    <title>Function JS</title>
 </head>
+<body>
+    <header>
+        <nav
+            class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="https://icons.veryicon.com/png/o/miscellaneous/20-classification-function-icon/8_3-front-end-development-1.png"
+                        class="h-8" alt="Flowbite Logo">
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">PWFE</span>
+                </a>
+                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    <button type="button"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Voltar</button>
+                    <button data-collapse-toggle="navbar-sticky" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                    <ul
+                        class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="bg-white dark:bg-gray-900 mt-15 flex justify-center flex-col items-center">
+            <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+                <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+                    Funções
+                </h1>
+                <p class="text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">
+                    Função é um bloco de código que tem como preocupação a reutilização de códigos. A ideia principal é fazer valer a 
+                    <span class="text-blue-600 dark:text-blue-500">Modularidade</span> e 
+                    <span class="text-blue-600 dark:text-blue-500">Simplicidade</span> das características de um algoritmo.
+                </p>
+            </div>
+        
+            <figure class="max-w-screen-md mx-auto text-center mx-5">
+                <blockquote>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-1">Estrutura de uma função em JavaScript</h3>
+                    <p class="text-1xl italic font-small text-gray-900 dark:text-white">
+                        Uma das formas de criar funções é usando função tradicional e/ou Programação Orientada a Objetos (POO). Estrutura básica: 
+                        <br><span class="font-mono">NomeFunção (Atributos) { Corpo da função }</span>
+                    </p>
+                </blockquote>
+            </figure>
+            <div class="flex items-center justify-center my-6 mx-5">
+                <img class="h-auto max-w-full rounded-lg"
+                    src="https://hermes.dio.me/articles/cover/cdb0bbac-a877-4fab-9c5e-57979db9c81c.png" alt="">
+            </div>
+            <div class="py-8 px-4 mx-auto max-w-screen-xl text-center">
+                <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+                    <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-blue-900 dark:text-blue-300">Obs: Clean Code</span>
+                    Não repetir códigos, usar nomes apropriados para variáveis e funções, seguir boas práticas de espaçamento e incluir documentação necessária para fácil manutenção.
+                </p>
+            </div>
+        
+            <div class="py-8 px-4 mx-auto max-w-screen-xl text-center">
+                <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+                    DOM
+                </h1>
+                <p class="text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">
+                    O que é DOM? 
+                    O DOM (Document Object Model) é a representação de dados dos objetos que compõem a estrutura e o conteúdo de um documento na Web.
+                </p>
+                <p class="text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">
+                   
+                    Com o DOM conseguimos acessar um item especifico pelo ID e mudar seu elemento, segue o exemplo abaixo:
+                </p>
+            </div>
+        
+            <div class="flex items-center justify-center my-6 mx-5">
+                <div id="idDiv" class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
+                    <h1 class="text-2xl font-bold text-gray-900 dark:text-white">Minha Div! :></h1>
+                </div>
+            </div>
+        
+            <div class="flex items-center justify-center my-6 mx-5">
+                <button onclick="mudarCor()" class="bg-blue-500 text-white font-medium px-4 py-2 rounded-md hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-800">
+                    Mudar Cor
+                </button>
+            </div>
+        </section>
+        <script>
+            function mudarCor(){
+                let div = document.getElementById("idDiv")
+                if(div.style.backgroundColor == "beige"){
+                    div.style.backgroundColor == "green"
+                }
+                else {
+                    div.style.backgroundColor = "purple"
+                }
+            }
+        </script>
+    </main>
+    <footer class="bg-black">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    <img src="https://icons.veryicon.com/png/o/miscellaneous/20-classification-function-icon/8_3-front-end-development-1.png"
+                        class="h-8" alt="Fer" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-black">Flowbite</span>
+                </a>
+                <ul
+                    class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">Activits</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">Choice</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">Js Repository</a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href=""
+                    class="hover:underline">Israel Santana</a>. All Rights Reserved.</span>
+        </div>
+    </footer>
+</html>
 <style>
     #idDiv{
         background-color: beige;
@@ -13,35 +151,3 @@
         margin: 20;
     }
 </style>
-<body>
-    <header>
-
-    </header>
-    <main>
-        <h1>Funções</h1>
-        <p>
-            Função bloco de codigo que tem como preocupação a reutilização de codigos. 
-            A ideia principal é fazer vale a Modularidade e simplicidade das características de um Algoritmo
-        </p>
-        <P>Uma das formas de funções é usando função e/ou POO;</P>
-        <p>Estrutura de uma função em JavaScript:</p>
-        <p>NomeFunção (Atributos) {} Corpo da função</p>
-
-        <p>obs: Clean code de uma função: Não repetir códigos, as vaiaveis e funções devem ter nomes apropriados para o uso. Os espaçamentos devem seguir as boas práticas e trazer a documentaão necessaria para fácil manutenção. </p>
-
-        <p>Dom</p>  
-        <!-- O que é dom -->
-
-        <h1>Minha Div! :></h1>
-
-        <div id="idDiv">
-            <h1>Minha Div! :></h1>
-        </div>
-        <button onclick="mudarCor()">sss</button>
-    </main>
-    <footer>
-
-    </footer>
-</body>
-<script src="js.js"></script>
-</html>
