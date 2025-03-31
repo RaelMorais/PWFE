@@ -10,52 +10,80 @@
     <script src="./js/js.js"></script>
 </head>
 <body>
+    <!-- Cabeçalho com a navegação da página -->
     <header>
         <nav class="navbar navbar-light bg-light">
+          <!-- Título da navegação -->
           <a class="navbar-brand">Activits of Fernanda</a>
-              <form class="form-inline">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="goToPage()">Home</button>
-                <button type="button" class="btn btn-outline-primary" onclick="goToNext()">Next</button>
-              </form>
-          </nav>
+          <form class="form-inline">
+            <!-- Botão de navegação para "Home" que chama a função goToPage() -->
+            <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="goToPage()">Home</button>
+            <!-- Botão de navegação para "Next" que chama a função goToNext() -->
+            <button type="button" class="btn btn-outline-primary" onclick="goToNext()">Next</button>
+          </form>
+        </nav>
     </header>
+
+    <!-- Corpo principal da página -->
     <main>
         <section class="primary_section">
+            <!-- Título da primeira seção -->
             <h1>#01</h1>
-        <div class="div_container">
-        <div class="mb-3">
-            <label for="formGroupExampleInput" class="form-label">Enter a First Number</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Number 1">
-          </div>
-          <div class="mb-3">
-            <label for="formGroupExampleInput2" class="form-label">Enter a Second Number</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Number 2">
-          </div>
-        </div>
-        <button type="button" onclick="ver()" class="btn btn-dark btn-lg">See</button>
-        <h2>Result: <span id="resultados"></span></h2>
+
+            <!-- Divisão para agrupar os campos de entrada -->
+            <div class="div_container">
+                <!-- Campo para o primeiro número -->
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Enter a First Number</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Number 1">
+                </div>
+                <!-- Campo para o segundo número -->
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Enter a Second Number</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Number 2">
+                </div>
+            </div>
+            
+            <!-- Botão para acionar a função ver() e mostrar o resultado -->
+            <button type="button" onclick="ver()" class="btn btn-dark btn-lg">See</button>
+            
+            <!-- Exibição do resultado da operação -->
+            <h2>Result: <span id="resultados"></span></h2>
         </section>
+
+        <!-- Seção de navegação secundária com links para as páginas -->
         <section class="secondary_section">
             <nav aria-label="Page navigation example">
                 <ul class="pagination">
-                  <li class="page-item"><a class="page-link" href="./desafio_01.html">1</a></li>
-                  <li class="page-item"><a class="page-link" href="./desafio_02.html">2</a></li>
-                  <li class="page-item"><a class="page-link" href="./desafio_03.html">3</a></li>
-                  <li class="page-item"><a class="page-link" href="./desafio_04.html">4</a></li>
-                  <li class="page-item"><a class="page-link" href="./desafio_05.html">5</a></li>
-                  <li class="page-item"><a class="page-link" href="./desafio_06.html">6</a></li>
-                  <li class="page-item"><a class="page-link" href="./desafio_07.html">7</a></li>
-                  <li class="page-item"><a class="page-link" href="./desafio_08.html">8</a></li>
-                  <li class="page-item"><a class="page-link" href="./desafio_09.html">9</a></li>
-                  <li class="page-item"><a class="page-link" href="./desafio_10.html">10</a></li>
-                  <li class="page-item"><a class="page-link" href="./desafio_11.html">11</a></li>
-                  <li class="page-item"><a class="page-link" href="./desafio_12.html">12</a></li>
+                    <!-- Links de navegação para diferentes páginas -->
+                    <li class="page-item"><a class="page-link" href="./desafio_01.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="./desafio_02.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="./desafio_03.html">3</a></li>
+                    <li class="page-item"><a class="page-link" href="./desafio_04.html">4</a></li>
+                    <li class="page-item"><a class="page-link" href="./desafio_05.html">5</a></li>
+                    <li class="page-item"><a class="page-link" href="./desafio_06.html">6</a></li>
+                    <li class="page-item"><a class="page-link" href="./desafio_07.html">7</a></li>
+                    <li class="page-item"><a class="page-link" href="./desafio_08.html">8</a></li>
+                    <li class="page-item"><a class="page-link" href="./desafio_09.html">9</a></li>
+                    <li class="page-item"><a class="page-link" href="./desafio_10.html">10</a></li>
+                    <li class="page-item"><a class="page-link" href="./desafio_11.html">11</a></li>
+                    <li class="page-item"><a class="page-link" href="./desafio_12.html">12</a></li>
                 </ul>
-              </nav>
+            </nav>
         </section>
-      </main>
-      <footer class="footer-basic">
-        <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer class="footer-basic">
+        <!-- Links das redes sociais -->
+        <div class="social">
+            <a href="#"><i class="icon ion-social-instagram"></i></a>
+            <a href="#"><i class="icon ion-social-snapchat"></i></a>
+            <a href="#"><i class="icon ion-social-twitter"></i></a>
+            <a href="#"><i class="icon ion-social-facebook"></i></a>
+        </div>
+        
+        <!-- Links do rodapé (ex: Home, Services, etc.) -->
         <ul class="list-inline">
             <li class="list-inline-item"><a href="#">Home</a></li>
             <li class="list-inline-item"><a href="#">Services</a></li>
@@ -63,17 +91,26 @@
             <li class="list-inline-item"><a href="#">Terms</a></li>
             <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
         </ul>
+        
+        <!-- Copyright -->
         <p class="copyright">Israel Santana © 2025</p>
     </footer>
+
+    <!-- Scripts necessários para o funcionamento do Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
-    </html>
+    
+    <!-- Script personalizado com funções para navegação -->
     <script>
+        // Função para redirecionar para a página inicial
         function goToPage() {
-        window.location.href = "../index.html"; 
-      }
-      function goToNext(){
-        window.location.href = 'desafio_02.html'
-      }
+            window.location.href = "../index.html"; 
+        }
+        
+        // Função para redirecionar para a próxima página
+        function goToNext() {
+            window.location.href = 'desafio_02.html';
+        }
     </script>
+</body>
+</html>

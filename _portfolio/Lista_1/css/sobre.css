@@ -1,10 +1,15 @@
+/* Importando a fonte Poppins do Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
+/* Reseta margens, preenchimentos e define a caixa de modelo e fonte padrão */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+/* Seção "about-us" com alinhamento centralizado e altura total da tela */
 .about-us {
   display: flex;
   align-items: center;
@@ -13,11 +18,15 @@
   padding: 90px 0;
   background: #fff;
 }
+
+/* Estilo da imagem (foto) com largura e bordas arredondadas */
 .pic {
   height: auto;
   width: 400px;
   border-radius: 12px;
 }
+
+/* Container da seção "about" com espaçamento entre os itens e alinhamento central */
 .about {
   width: 1130px;
   max-width: 85%;
@@ -26,33 +35,47 @@
   align-items: center;
   justify-content: space-around;
 }
+
+/* Estilo do texto na seção "about" */
 .text {
   width: 540px;
 }
+
+/* Título principal da seção com estilo de fonte grande e cor */
 .text h2 {
   color: #333;
   font-size: 70px;
   font-weight: 600;
   margin-bottom: 10px;
 }
+
+/* Subtítulo com fonte menor e espaçamento abaixo */
 .text h5 {
   color: #333;
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 20px;
 }
+
+/* Destaque de cor para texto que está em um span */
 span {
   color: #4070f4;
 }
+
+/* Parágrafo com texto explicativo, cor e espaçamento de linha */
 .text p {
   color: #333;
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 1px;
 }
+
+/* Seção "data" com margem superior para espaçamento */
 .data {
   margin-top: 30px;
 }
+
+/* Estilo do botão "hire" com cor de fundo e transição de hover */
 .hire {
   font-size: 18px;
   background: #4070f4;
@@ -63,9 +86,13 @@ span {
   border-radius: 6px;
   transition: 0.5s;
 }
+
+/* Efeito hover no botão "hire" */
 .hire:hover {
   background: #000;
 }
+
+/* Estilo do container do rodapé com alinhamento central */
 .footer-container{
     background-color: #ffffff;
     height: 150px;
@@ -75,28 +102,36 @@ span {
     align-items: center;
     flex-direction: column;
 }
+
+/* Estilo de parágrafo dentro do rodapé, centralizado */
 .footer-container p{
     text-align: center;
 }
 
+/* Estilo de ícones com tamanho grande */
 .itens{
    font-size: 40px; 
 }
 
+/* Estilos específicos para os ícones de redes sociais com cores personalizadas */
 .fab.fa-js {
-    color: #F7DF1E;
-    }
-    
-    
-    .fab.fa-bootstrap {
-    color: #563D7C; 
-    }
-    .fab.fa-html5 {
-    color: #E34F26;
-    }
+    color: #F7DF1E; /* Cor do ícone do JavaScript */
+}
+
+.fab.fa-bootstrap {
+    color: #563D7C; /* Cor do ícone do Bootstrap */
+}
+
+.fab.fa-html5 {
+    color: #E34F26; /* Cor do ícone do HTML5 */
+}
+
+/* Estilo para elementos com tamanho de texto pequeno */
 .small{
     font-size: 10px;
 }
+
+/* Removendo sublinhado de links dentro da classe "small" */
 .small a{
     text-decoration: none;
 }
