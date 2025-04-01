@@ -14,7 +14,8 @@
         <nav class="navbar navbar-light bg-light">
             <a class="navbar-brand">Atividades da Fer</a>
             <form class="form-inline">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="goToPage()">Voltar</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="goToPage()">Back</button>
+                <button type="button" class="btn btn-outline-primary" onclick="goToNext()">Next</button>
               </form>
           </nav>
     </header>
@@ -55,13 +56,11 @@
         </section>
     </main>
     <footer class="footer-basic">
-        <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+        <div class="social"><a href="#"><i class="icon ion-social-github"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-linkedin"></i></a></div>
         <ul class="list-inline">
-            <li class="list-inline-item"><a href="#">Home</a></li>
-            <li class="list-inline-item"><a href="#">Services</a></li>
-            <li class="list-inline-item"><a href="#">About</a></li>
-            <li class="list-inline-item"><a href="#">Terms</a></li>
-            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            <li class="list-inline-item"><a href="../index.html">Home</a></li>
+            <li class="list-inline-item"><a href="https://github.com/RaelMorais">Github</a></li>
+            <li class="list-inline-item"><a href="../sobre.html">Sobre</a></li>
         </ul>
         <p class="copyright">Israel Santana © 2025</p>
     </footer>
@@ -71,8 +70,11 @@
 </html>
 <script>
     function goToPage() {
-  window.location.href = "../index.html"; // Redireciona para o 'index.html'
-}
+    window.location.href = "desafio_10.html"; 
+  }
+  function goToNext(){
+        window.location.href = 'desafio_12.html'
+      }
   </script>
   <script>
 
