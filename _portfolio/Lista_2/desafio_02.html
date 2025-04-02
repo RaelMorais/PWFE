@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#1</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/js.js"></script>
+</head>
+<body>
+    <!-- Cabeçalho com a navegação da página -->
+    <header>
+        <nav class="navbar navbar-light bg-light">
+          <a class="navbar-brand">Activits of Fernanda</a>
+          <form class="form-inline">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="goToPage()">Home</button>
+            <button type="button" class="btn btn-outline-primary" onclick="goToNext()">Next</button>
+          </form>
+        </nav>
+    </header>
+
+    <!-- Corpo principal da página -->
+    <main>  
+        
+        <section class="primary_section" id="saida">
+      
+        </section>
+        <section class="secondary_section">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <!-- Links de navegação para diferentes páginas -->
+                    <li class="page-item"><a class="page-link" href="./desafio_01.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="./desafio_02.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="./desafio_03.html">3</a></li>
+                    <li class="page-item"><a class="page-link" href="./desafio_04.html">4</a></li>
+                    <li class="page-item"><a class="page-link" href="./desafio_05.html">5</a></li>
+                    <li class="page-item"><a class="page-link" href="./desafio_06.html">6</a></li>
+                    <li class="page-item"><a class="page-link" href="./desafio_07.html">7</a></li>
+                    <li class="page-item"><a class="page-link" href="./desafio_08.html">8</a></li>
+                    <li class="page-item"><a class="page-link" href="./desafio_09.html">9</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer class="footer-basic">
+        <div class="social"><a href="#"><i class="icon ion-social-github"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-linkedin"></i></a></div>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="../index.html">Home</a></li>
+            <li class="list-inline-item"><a href="https://github.com/RaelMorais">Github</a></li>
+            <li class="list-inline-item"><a href="../sobre.html">Sobre</a></li>
+        </ul>
+        <p class="copyright">Israel Santana © 2025</p>
+    </footer>
+
+    <!-- Scripts necessários para o funcionamento do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function goToPage() {
+            window.location.href = "../index.html"; 
+        }
+        
+        function goToNext() {
+            window.location.href = 'desafio_02.html';
+        }
+    </script>
+</body>
+</html>

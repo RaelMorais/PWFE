@@ -1,0 +1,200 @@
+
+/* Resetando margens e preenchimentos padrão de todos os elementos */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Container principal da página, flexbox para centralizar */
+.div_container{
+    display: flex;
+    flex-direction: column;
+    /* height: 190px; */ /* Removido o height fixo para permitir flexibilidade */
+    width: 400px;
+    margin-top: 10%;
+}
+
+/* Seção principal com alinhamento central */
+.primary_section{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+/* Seção secundária com justificação centralizada */
+.secondary_section{
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+}
+
+/* Container da tabela com alinhamento central */
+.table-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Tabela com margem superior */
+.table {
+    margin-top: 20px;
+}
+
+/* Estilo para cada linha de multiplicação */
+.multiplication-row {
+    font-size: 1.2rem;
+    margin: 5px;
+}
+
+/* Estilo para os spans dentro das linhas de multiplicação */
+.multiplication-row span {
+    margin: 0 5px;
+}
+
+/* Formulário com disposição centralizada */
+.form-group{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ajustando o tamanho do input de número */
+#number_one_ex10{
+    justify-content: center;
+    width: 300px;
+}
+
+/* Estilo de link sem sublinhado */
+a{
+    text-decoration: none;
+}
+
+/* Seção principal da página com alinhamento flex */
+.section_main{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+/* Container principal com altura e alinhamento centralizado */
+.container_main{
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    width: 100%;
+    height: 899px;
+    justify-content: center;
+    align-items: center ;
+}
+
+/* Container com margens superiores ajustadas */
+.div{
+    margin-top: 30%;
+}
+
+/* Estilo do rodapé */
+.footer-basic {
+    padding: 40px 0;
+    background-color: #ffffff;
+    color: #4b4c4d;
+}
+
+/* Estilos da lista no rodapé */
+.footer-basic ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Estilos dos itens da lista */
+.footer-basic li {
+    padding: 0 10px;
+}
+
+/* Links no rodapé */
+.footer-basic ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+/* Hover dos links */
+.footer-basic ul a:hover {
+    opacity: 1;
+}
+
+/* Estilo dos ícones de rede social */
+.footer-basic .social {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+/* Estilos dos links sociais */
+.footer-basic .social > a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+/* Hover dos ícones sociais */
+.footer-basic .social > a:hover {
+    opacity: 0.9;
+}
+
+/* Copyright no rodapé */
+.footer-basic .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0;
+}
+
+/* Formulário com espaçamento entre os itens */
+.form-inline{
+    gap: 10px;
+}
+
+/* Vídeo de fundo fixo, ocupando toda a tela */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Fica atrás do conteúdo */
+}
+
+/* Estilo do botão do jogo */
+.btn-game {
+    font-size: 20px;
+    padding: 20px;
+    width: 200px;
+    margin: 20px;
+}
+
+/* Estilo da área de resultado */
+.result {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+/* Estilo do placar */
+.score {
+    margin-top: 30px;
+    font-size: 20px;
+}
