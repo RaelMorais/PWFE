@@ -3,4 +3,4 @@
 
 Repositória para entrega de atividades relacionadas a matéria de front end, para desenvolvimneto foi usado: 
 
-(https://skillicons.dev/icons?i=js,html,css,bootstrap,tailwind)
+![My Skills](https://skillicons.dev/icons?i=html,css,js,bootstrap,tailwind&theme=light)
