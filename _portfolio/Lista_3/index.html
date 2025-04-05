@@ -8,15 +8,13 @@
         <!-- Importação do Tailwind CSS -->
         <script src="https://cdn.tailwindcss.com"></script>
         <!-- Font Awesome (Ícones) -->
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <!-- Flowbite CSS e JS -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
-            rel="stylesheet" />
-        <script
-            src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-        <style>
+        <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+        <style> 
+        /* Para ajuste no Body, zerando o Paddin e o Margin.  */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -31,7 +29,7 @@
             <div
                 class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <!-- Logo e nome do site -->
-                <a href="./index.html"
+                <a href="../index.html"
                     class="flex items-center space-x-3 rtl:space-x-reverse">
                     <!-- Imagem do logo -->
                     <img
@@ -66,7 +64,7 @@
 
                         <!-- Item do menu "Home" -->
                         <li>
-                            <a href="./index.html"
+                            <a href="../index.html"
                                 class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
                                 aria-current="page">
                                 Home
@@ -75,7 +73,7 @@
 
                         <!-- Item do menu "Sobre" -->
                         <li>
-                            <a href="./sobre.html"
+                            <a href="../sobre.html"
                                 class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
                                 Sobre
                             </a>
@@ -83,7 +81,7 @@
 
                         <!-- Item do menu "Atividades" -->
                         <li>
-                            <a href="./Lista_1/_index_desafios.html"
+                            <a href="./_index_desafios.html"
                                 class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
                                 Atividades
                             </a>
@@ -91,7 +89,7 @@
 
                         <!-- Item do menu "Aulas" -->
                         <li>
-                            <a href="../aulas/index_aula.html"
+                            <a href="../../aulas/index_aula.html"
                                 class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
                                 Aulas
                             </a>
@@ -103,113 +101,177 @@
         <!-- Fim da barra de navegação -->
     </header>
 
-    <body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white">
+    <body class="bg-white-100 dark:bg-gray-900 text-gray-900 dark:text-white">
         <section
-            class="bg-white dark:bg-gray-900 min-h-screen flex justify-center flex-col items-center py-15">
+            class="bg-white dark:bg-gray-900 min-h-screen flex justify-center flex-col items-center py-20">
             <!-- Cabeçalho -->
             <div
                 class="py-6 px-4 mx-auto max-w-screen-xl text-center lg:py-12 w-full">
                 <h1
                     class="mb-4 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl lg:text-5xl dark:text-white">
-                    Escolha 
+                    Escolha o desafio
                 </h1>
-                <p
-                    class="text-base font-normal text-gray-500 lg:text-lg sm:px-8 lg:px-32 dark:text-gray-400">
-                    Conteudo das aulas de 
-                    <span
-                        class="bg-blue-100 text-blue-800 text-xs font-medium px-2 py-0.5 rounded-sm dark:bg-blue-900 dark:text-blue-300">
-                        PWFE
-                    </span>.
-                </p>
             </div>
 
             <!-- Grid de Cards -->
             <div
                 class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 justify-items-center sm:justify-items-start px-4 sm:px-1 lg:px-4 max-w-screen-xl w-full mx-auto">
-                <!-- Card 1: Arrays Aula 03 -->
-                <a href="../aulas/index_aula.html"
+                <!-- Card 1: Diferença entre dois números -->
+                <a href="./desafio_01.html"
                     class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                     <h5
-                        class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Aulas
-                    </h5>
+                        class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Desafio
+                        1</h5>
                     <p class="font-normal text-gray-700 dark:text-gray-400">
-                        Apresentação dos conceitos de FRONTEND, juntamente com a
-                        1° Entrega.
+                        Em JavaScript o usuário irá inserir 2 números, e
+                        mostrará a diferença entre eles.
                     </p>
                 </a>
 
-                <!-- Card 2: Clean Code Aula Extra -->
-                <a href="./Lista_1/_index_desafios.html"
+                <!-- Card 2: Verificação de número par -->
+                <a href="./desafio_02.html"
                     class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                     <h5
-                        class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">1°
-                        Lista
-                    </h5>
+                        class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Desafio
+                        2</h5>
                     <p class="font-normal text-gray-700 dark:text-gray-400">
-                        Primeira lista de desafios de PWFE para entrega juntamento com Portfolio.
+                        Em JavaScript, o usuário irá inserir um número e o
+                        programa verificará se o número é par.
                     </p>
                 </a>
 
-                <!-- Card 3: Funções Aula 04 -->
-                <a href="#"
+                <!-- Card 3: Múltiplos de 2 notas -->
+                <a href="./desafio_03.html"
                     class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                     <h5
-                        class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">2°
-                        Lista
-                    </h5>
+                        class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Desafio
+                        3</h5>
                     <p class="font-normal text-gray-700 dark:text-gray-400">
-                        Explore como criar e usar funções para organizar e
-                        reutilizar seu código.
+                        Solicite 2 notas, e veja se o 1º número é múltiplo do 2º
+                        (ex: 9 é múltiplo de 3).
                     </p>
                 </a>
 
-                <!-- Card 4: Estruturas Condicionais -->
-                <a href="#"
+                <!-- Card 4: Conversão de Temperatura -->
+                <a href="./desafio_04.html"
                     class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                     <h5
-                        class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">3°
-                        Lista
-                    </h5>
+                        class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Desafio
+                        4</h5>
                     <p class="font-normal text-gray-700 dark:text-gray-400">
-                        Entenda como usar if, else e switch para tomar decisões
-                        no seu código.
+                        Converta uma temperatura em Celsius para Fahrenheit (ºC
+                        * 9/5) + 32.
                     </p>
                 </a>
 
-                <!-- Card 5: Laços de Repetição -->
-                <a href="#"
+                <!-- Card 5: Cálculo da Área -->
+                <a href="./desafio_05.html"
                     class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                     <h5
-                        class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">4°
-                        Lista</h5>
+                        class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Desafio
+                        5</h5>
                     <p class="font-normal text-gray-700 dark:text-gray-400">
-                        Domine for, while e do-while para iterar sobre dados e
-                        automatizar tarefas.
+                        Calcule a área de um triângulo usando a fórmula (base *
+                        altura).
                     </p>
                 </a>
 
-                <!-- Card 6: Manipulação de DOM -->
-                <a href="#"
+                <!-- Card 6: Média, Paridade e Resultado -->
+                <a href="./desafio_06.html"
                     class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                     <h5
-                        class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">5°
-                        Lista</h5>
+                        class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Desafio
+                        6</h5>
                     <p class="font-normal text-gray-700 dark:text-gray-400">
-                        Aprenda a interagir com o HTML e criar páginas dinâmicas
-                        com JavaScript.
+                        Solicite duas notas ao usuário e informe se está acima
+                        da média, e se é uma nota par.
+                    </p>
+                </a>
+
+                <!-- Card 7: Cálculo do IMC -->
+                <a href="./desafio_07.html"
+                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <h5
+                        class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Desafio
+                        7</h5>
+                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                        Solicite o peso e a altura de uma pessoa e calcule o IMC
+                        (peso / altura²).
+                    </p>
+                </a>
+
+                <!-- Card 8: Ano Bissexto -->
+                <a href="./desafio_08.html"
+                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <h5
+                        class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Desafio
+                        8</h5>
+                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                        Verifique se um ano é bissexto, entrando com o ano
+                        inicial e verificando se é bissexto.
+                    </p>
+                </a>
+
+                <!-- Card 9: Conversão de Moeda -->
+                <a href="./desafio_09.html"
+                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <h5
+                        class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Desafio
+                        9</h5>
+                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                        Solicite ao usuário uma taxa de câmbio, e um valor
+                        desejado, exiba quanto ficaria esse valor.
+                    </p>
+                </a>
+
+                <!-- Card 10: Tabuada -->
+                <a href="./desafio_10.html"
+                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <h5
+                        class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Desafio
+                        10</h5>
+                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                        Peça um número ao usuário de 1 a 9, e imprima a tabuada
+                        desse número.
+                    </p>
+                </a>
+
+                <!-- Card 11: Pedra, Papel e Tesoura -->
+                <a href="./desafio_11.html"
+                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <h5
+                        class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Desafio
+                        11</h5>
+                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                        Simule um jogo de "Pedra, papel e tesoura" contra o
+                        computador.
+                    </p>
+                </a>
+
+                <!-- Card 12: Fatorial -->
+                <a href="./desafio_12.html"
+                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <h5
+                        class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Desafio
+                        12</h5>
+                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                        Crie um programa que calcula o fatorial de um número
+                        (ex: 5! = 1*2*3*4*5).
+                    </p>
+                </a>
+
+                <!-- Card 12: Fatorial -->
+                <a href="./desafio_13.html"
+                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <h5
+                        class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Desafio
+                        13</h5>
+                    <p class="font-normal text-gray-700 dark:text-gray-400">
+                        Crie um programa que calcula o fatorial de um número
+                        (ex: 5! = 1*2*3*4*5).
                     </p>
                 </a>
             </div>
-
-            <!-- Citação Final -->
-            <blockquote
-                class="dark:bg-black border-l-4 border-blue-500 pl-4 italic text-white-700 bg-gray-100 p-4 rounded-md my-6 mx-4 sm:mx-6 lg:mx-10 w-full max-w-screen-md">
-                <p class="text-sm sm:text-base">"Descobri desenvolvendo em
-                    Tailwind o que <span
-                        class="font-semibold text-gray-900 underline dark:text-white decoration-blue-500">só
-                        os loucos
-                        sabem</span>" - Israel S. </p>
-            </blockquote>
         </section>
         <footer class="bg-white dark:bg-black">
             <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
@@ -220,16 +282,16 @@
                             src="https://icons.veryicon.com/png/o/miscellaneous/20-classification-function-icon/8_3-front-end-development-1.png"
                             class="h-8" alt="Fer" />
                         <span
-                            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-black">PWFE</span>
+                            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-black">Flowbite</span>
                     </a>
                     <ul
                         class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                         <li>
-                            <a href="./index.html"
+                            <a href="../index.html"
                                 class="hover:underline me-4 md:me-6">Home</a>
                         </li>
                         <li>
-                            <a href="./Lista_1/_index_desafios.html"
+                            <a href="./_index_desafios.html"
                                 class="hover:underline me-4 md:me-6">Atividades</a>
                         </li>
                         <li>
